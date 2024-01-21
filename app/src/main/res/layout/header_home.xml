@@ -13,7 +13,7 @@
         android:gravity="start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/bg_notes_yellow"
+        android:src="@drawable/fortius_logo"
         android:scaleType="fitXY"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_12sdp" />
