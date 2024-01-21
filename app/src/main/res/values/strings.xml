@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Fortius</string>
+    <string name="no_data_found">No data found</string>
+    <string name="open_file">Open File</string>
+    <string name="scan_button">Scan Button</string>
+    <string name="fab_descr">Open File</string>
+    <string name="submit">Submit</string>
+    <string name="excel_reader">Excel Reader</string>
+    <string name="recent">Recent Files</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="attendance">Attendance</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="show_data">Show Data</string>
+    <string name="show_all_data">Show All Data</string>
+    <string name="import_data">Import</string>
+    <string name="total_asset">All Assets</string>
+    <string name="total_done">Done</string>
+    <string name="total_new">New Asset</string>
+    <string name="total_open">Open</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="export">Export</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_password_desc">This File is Password Protected. Enter Password to Open</string>
+    <string name="err_password_empty">Password Field is Empty.</string>
+    <string name="err_password_incorrect">Password is incorrect.</string>
+    <string name="err_password_correct">Password is Correct.</string>
+    <string name="err_invalid_file_selected">Invalid File Selected</string>
+    <string name="err_file_too_big">File Size Too Big</string>
+    <string name="find_asset">Find Asset</string>
+    <string name="find">Find</string>
+    <string name="id_sap">ID SAP</string>
+    <string name="find_id_sap_hint">Type ID SAP</string>
+    <string name="submit_asset">Submit Asset</string>
+    <string name="get_asset">Get Asset</string>
+    <string name="show_open_asset_only">Show Open JO</string>
+
+
+    <string name="sample_receiver_email">samuel.septiano@rodamas.com</string>
+    <string name="sample_receiver_title">Exported Excel File</string>
+    <string name="sample_receiver_message">Dear %1$s,\n\nI will send this %2$s  files to you.\n Thank You.</string>
+    <string name="sample_exported_filename">%1$s Exported-Asset</string>
+
+    <string name="file_is_downloading">The File is Downloading…</string>
+    <string name="data_exported_successfully">Data Excel exported successfully..</string>
+    <string name="data_pdf_exported_successfully">Data Pdf exported successfully..</string>
+    <string name="data_pdf_exported_failed">Data Pdf failed to export..</string>
+
+    <string name="update_password">Update Password</string>
+    <string name="share_email">Share Email</string>
+    <string name="sender_email">Sender E-mail</string>
+    <string name="receiver_email">Receiver E-mail</string>
+    <string name="title_email">Title</string>
+    <string name="body_email">Body</string>
+    <string name="send_email">Send</string>
+    <string name="capture">Capture</string>
+
+    <string name="add">Add</string>
+    <string name="add_data">Add Data</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string-array name="status">
+        <item>DONE</item>
+        <item>UNDONE</item>
+    </string-array>
+    <string-array name="status_asset">
+        <item>OPEN</item>
+        <item>DONE</item>
+    </string-array>
+    <string-array name="type">
+        <item>NEW</item>
+        <item>EXISTING</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="placeholder_duration">0 hrs 0 mins</string>
+    <string name="lbl_total_check_in">Total Check In</string>
+    <string name="lbl_date">Date</string>
+    <string name="lbl_duration">Duration</string>
+    <string name="lbl_location">Location</string>
+    <string name="cross_day">Cross Day</string>
+    <string name="documentations">Documentations</string>
+
+
+    <string-array name="month_english">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>Many</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string name="lbl_choose_image">Choose Image</string>
+    <string name="lbl_choose_image_desc">Select Image Source</string>
+    <string name="lbl_choose_gallery">Choose From Gallery</string>
+    <string name="lbl_capture_photo">Choose Camera</string>
+
+
+    <string name="lbl_unsaved_changes">Unsaved Changes</string>
+    <string name="lbl_unsaved_changes_desc">Your Asset data is unsaved.  Are you sure want to exit?</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_exit">Exit</string>
+    <string name="lbl_early_checkout">Early Check Out</string>
+    <string name="lbl_early_checkin">Early Check In</string>
+    <string name="lbl_late">Late</string>
+    <string name="lbl_overtime">Overtime</string>
+    <string name="lbl_absent">Absent</string>
+
+
+    <string name="lbl_history_last_opname">History Last Opname</string>
+    <string name="lbl_asset_name">Name</string>
+    <string name="lbl_asset_insert_date">Date</string>
+    <string name="lbl_asset_description">Description</string>
+    <string name="lbl_asset_type">Type</string>
+    <string name="lbl_asset_owner">Owner</string>
+    <string name="lbl_asset_location">Location</string>
+    <string name="lbl_asset_info">Info</string>
+    <string name="lbl_asset_info_condition">Condition Info</string>
+
+    <string name="lbl_list_job_order">List Job Order</string>
+    <string name="lbl_asset_status">Status</string>
+    <string name="lbl_asset_status_exist">Status Exist</string>
+    <string name="lbl_asset_remarks">Remarks</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_dash">-</string>
+    <string name="lbl_see_detail">See Detail</string>
+
+    <string name="alert_update_app">Application Version Need To Be Updated</string>
+    <string name="alert_update_app_desc">Please update your application with the newest version</string>
+
+
+    <string name="downloading">Downloading...</string>
+    <string name="title_file_download">APK is downloading</string>
+    <string name="storage_access_required">Storage access is required to downloading the file.</string>
+    <string name="storage_permission_denied">Storage permission request was denied.</string>
+    <string name="ok">OK</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tv_logo"
+        style="@style/tvStyleRegular"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_notes_yellow"
+        android:scaleType="fitXY"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        style="@style/tvStyleBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="@id/tv_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_logo"
+        app:layout_constraintEnd_toStartOf="@id/btn_notif"
+        android:text="@string/lbl_dash"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_notif"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/ic_bell"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_role"
+        style="@style/tvStyleRegular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="@id/tv_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/lbl_dash"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

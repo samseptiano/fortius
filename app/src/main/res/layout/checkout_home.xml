@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_8sdp"
+        android:layout_margin="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_current_date"
+            style="@style/tvStyleRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/lbl_dash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btn_check_in"
+            app:layout_constraintEnd_toStartOf="@id/btn_check_in"
+            android:textColor="@color/colorGreyDarker"
+            android:textSize="@dimen/_14sdp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_check_in"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/check_in" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkin"
+                style="@style/tvStyleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text="@string/check_in"
+                android:textColor="@color/colorGreyDarker"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_checkout" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkout"
+                style="@style/tvStyleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/check_out"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_check_in"
+                android:textColor="@color/colorGreyDarker"
+                android:textSize="@dimen/_14sdp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_duration"
+                style="@style/tvStyleRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:text="@string/placeholder_duration"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_checkin"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_12sdp" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkin"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_duration"
+                app:layout_constraintStart_toStartOf="@id/tv_checkin"
+                app:layout_constraintEnd_toEndOf="@id/tv_checkin"
+                android:background="@drawable/grey_circle" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkout"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_duration"
+                app:layout_constraintStart_toStartOf="@id/tv_checkout"
+                app:layout_constraintEnd_toEndOf="@id/tv_checkout"
+                android:background="@drawable/grey_circle" />
+            <View
+                android:id="@+id/iv_duration"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                app:layout_constraintTop_toTopOf="@id/iv_checkin"
+                app:layout_constraintBottom_toBottomOf="@id/iv_checkin"
+                app:layout_constraintStart_toEndOf="@id/iv_checkin"
+                app:layout_constraintEnd_toStartOf="@id/iv_checkout"
+                android:background="@color/colorGrey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkin_time"
+                style="@style/tvStyleRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:layout_marginTop="@dimen/_32sdp"
+                app:layout_constraintStart_toStartOf="@id/tv_checkin"
+                app:layout_constraintTop_toBottomOf="@id/iv_checkin"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_12sdp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkout_time"
+                style="@style/tvStyleRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:layout_marginTop="@dimen/_32sdp"
+                app:layout_constraintStart_toStartOf="@id/tv_checkout"
+                app:layout_constraintTop_toBottomOf="@id/iv_checkout"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkin_location"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:scaleType="fitCenter"
+                app:layout_constraintTop_toBottomOf="@id/tv_checkin_time"
+                app:layout_constraintStart_toStartOf="@id/tv_checkin_time"
+                android:background="@drawable/blue_map" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkin_location"
+                style="@style/tvStyleRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/lbl_dash"
+                android:ellipsize="marquee"
+                android:maxLength="6"
+                app:layout_constraintStart_toEndOf="@id/iv_checkin_location"
+                app:layout_constraintEnd_toStartOf="@id/iv_checkout_location"
+                app:layout_constraintTop_toTopOf="@id/iv_checkin_location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkout_location"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_checkout_time"
+                app:layout_constraintStart_toStartOf="@id/tv_checkout_time"
+                android:background="@drawable/blue_map" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkout_location"
+                style="@style/tvStyleRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/lbl_dash"
+                android:ellipsize="marquee"
+                android:maxLength="6"
+                app:layout_constraintStart_toEndOf="@id/iv_checkout_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_checkout_location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

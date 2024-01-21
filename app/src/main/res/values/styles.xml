@@ -1,0 +1,161 @@
+<resources>
+<style name="full_screen_dialog">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+    <style name="tvStyleBold">
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="tvStyleRegular">
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+    <style name="edtStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="background">@drawable/edittext_selector</item>
+        <item name="android:background">@drawable/edittext_selector</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:shadowColor">@color/colorBlack</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="customCardView" parent="CardView">
+        <item name="cardCornerRadius">@dimen/_8sdp</item>
+        <item name="cardElevation">@dimen/_8sdp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="customCardViewGrey" parent="CardView">
+        <item name="cardCornerRadius">@dimen/_8sdp</item>
+        <item name="cardElevation">@dimen/_8sdp</item>
+        <item name="cardBackgroundColor">@color/colorLightGrey</item>
+    </style>
+
+    <style name="customDropDown" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="android:height">@dimen/_50sdp</item>
+        <item name="android:width">@dimen/_200sdp</item>
+<!--        <item name="android:background">@drawable/spinner_selector</item>-->
+<!--        <item name="android:dropDownSelector">@drawable/spinner_selector</item>-->
+    </style>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--styles for profile-->
+    <style name="ProfileTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorTransparent</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textInputHintStyle" parent="TextAppearance.AppCompat.Medium.Inverse">
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="profileDetailsLayout" parent="parent">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="profileDetailsImage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="profileDetailsTextMain" parent="viewParent">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="profileDetailsMiniText" parent="viewParent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="proifleDetailsView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorLightGrey</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="NavigationDrawerStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textAppearance">@style/tvStyleRegular</item>
+        <item name="itemIconPadding">@dimen/_18sdp</item>
+        <item name="itemHorizontalPadding">@dimen/_18sdp</item>
+        <item name="itemShapeInsetStart">@dimen/_18sdp</item>
+    </style>
+
+</resources>
+
