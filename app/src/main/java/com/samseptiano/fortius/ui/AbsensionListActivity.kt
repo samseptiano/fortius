@@ -45,7 +45,6 @@ class AbsensionListActivity : BaseActivity<ActivityAbsensionListBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        actionBar?.hide();
 
         init()
         setupViews()
@@ -64,8 +63,8 @@ class AbsensionListActivity : BaseActivity<ActivityAbsensionListBinding>() {
                 finish()
             }
             toolbar.tvTitle.text = getString(R.string.attendance)
-            toolbar.ivIcon1.visibility = View.GONE
-            toolbar.ivIcon2.visibility = View.GONE
+            toolbar.ivIcon1.visibility = View.VISIBLE
+            toolbar.ivIcon2.visibility = View.VISIBLE
         }
     }
 
