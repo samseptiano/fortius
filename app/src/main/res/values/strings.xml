@@ -12,6 +12,7 @@
     <string name="login">Login</string>
     <string name="logout">Logout</string>
     <string name="attendance">Attendance</string>
+    <string name="attendance_detail">Attendance Detail</string>
     <string name="edit_password">Edit Password</string>
     <string name="show_data">Show Data</string>
     <string name="show_all_data">Show All Data</string>

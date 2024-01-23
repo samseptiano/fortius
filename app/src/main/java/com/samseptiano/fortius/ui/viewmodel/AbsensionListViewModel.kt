@@ -42,6 +42,9 @@ class AbsensionListViewModel @Inject constructor(
                 _getAbsensionData.postValue(arrayListOf(Pair(absensionModel, result2[index])))
             }
         }
+        else{
+            _getAbsensionData.postValue(arrayListOf())
+        }
 
     }
 

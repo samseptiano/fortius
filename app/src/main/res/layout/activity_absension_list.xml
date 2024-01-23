@@ -5,13 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.AbsensionListActivity">
-
+    <include android:id="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/custom_toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        tools:itemCount="3"
+        tools:listitem="@layout/absension_item_list"
+        android:layout_height="@dimen/_85sdp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvDate"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         tools:itemCount="3"
         tools:listitem="@layout/absension_item_list"

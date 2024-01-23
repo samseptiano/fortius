@@ -27,14 +27,16 @@
         android:roundIcon="@drawable/ic_app_logo"
         android:screenOrientation="fullSensor"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DemoAppp"
+        android:theme="@style/Theme.DemoAppp.NoActionBar"
         android:usesCleartextTraffic="true"
         tools:ignore="ExtraText">
         <activity
             android:name="com.samseptiano.fortius.ui.AbsensionDetailActivity"
+            android:theme="@style/Theme.DemoAppp.NoActionBar"
             android:exported="false" />
         <activity
             android:name="com.samseptiano.fortius.ui.AbsensionListActivity"
+            android:theme="@style/Theme.DemoAppp.NoActionBar"
             android:exported="false" />
         <activity
             android:name="com.samseptiano.fortius.ui.custom.CustomCameraActivity"
@@ -46,10 +48,10 @@
 
         <activity
             android:name="com.samseptiano.fortius.ui.SplashActivity"
+            android:theme="@style/Theme.DemoAppp.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

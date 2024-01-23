@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="@color/colorPrimary"
-android:elevation="4dp"
-android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_arrow_black_24dp"
+        android:layout_gravity="start"
+        android:paddingStart="16dp"
+        android:scaleType="fitCenter"
+        android:paddingEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/attendance_detail"
+        android:ellipsize="marquee"
+        android:maxLength="20"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ivIcon1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting"
+        android:layout_gravity="end"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivIcon2"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar"
+        android:layout_gravity="end"
+        android:paddingStart="16dp"
+
+        android:paddingEnd="16dp"/>
 
 </androidx.appcompat.widget.Toolbar>

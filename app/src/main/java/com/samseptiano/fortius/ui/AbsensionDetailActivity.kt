@@ -1,20 +1,21 @@
 package com.samseptiano.fortius.ui
 
-import android.R
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.MenuItem
+import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
+import com.samseptiano.base.ui.BaseActivity
+import com.samseptiano.fortius.R
 import com.samseptiano.fortius.data.model.response.AbsensionListModel
 import com.samseptiano.fortius.databinding.ActivityAbsensionDetailBinding
 import com.samseptiano.fortius.ui.adapter.AbsensionDetailAdapter
 import com.samseptiano.fortius.ui.viewmodel.AbsensionDetailViewModel
 import com.samseptiano.fortius.utils.DateUtil
 import com.samseptiano.fortius.utils.DateUtil.calculateDaysDifference
-import com.samseptiano.base.ui.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -34,8 +35,8 @@ class AbsensionDetailActivity : BaseActivity<ActivityAbsensionDetailBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.hide()
+        actionBar?.hide();
 
         init()
         setupAdapter()
@@ -43,13 +44,6 @@ class AbsensionDetailActivity : BaseActivity<ActivityAbsensionDetailBinding>() {
         setupViews()
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // handle arrow click here
-        if (item.itemId == R.id.home) {
-            finish() // close this activity and return to preview activity (if there is any)
-        }
-        return super.onOptionsItemSelected(item)
-    }
 
     private fun init() {
         viewModel = ViewModelProvider(this)[AbsensionDetailViewModel::class.java]
@@ -57,6 +51,13 @@ class AbsensionDetailActivity : BaseActivity<ActivityAbsensionDetailBinding>() {
 
     private fun setupViews() {
         binding.apply {
+            toolbar.ivBack.setOnClickListener {
+                finish()
+            }
+            toolbar.tvTitle.text = getString(R.string.attendance_detail)
+            toolbar.ivIcon1.visibility = View.GONE
+            toolbar.ivIcon2.visibility = View.GONE
+
             tvEmployeeName.text = dataDetailCheckIn.list.first().name
             tvEmployeeId.text = dataDetailCheckIn.list.first().companyName
             tvTotalCheckin.text = "(${dataDetailCheckIn.list.size}) Check In(s)"
